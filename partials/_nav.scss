@@ -1,0 +1,20 @@
+.navbar {
+  background-color: getColour(offwhite) !important;
+
+  .navbar-brand {
+    color: #262626;
+    font-size: 36px;
+  }
+
+  .navbar-nav .active > .nav-link {
+    color: getColour(primary);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+}

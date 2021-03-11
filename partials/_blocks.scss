@@ -1,0 +1,35 @@
+.round-corners {
+  border-radius: 20px;
+  border: none;
+}
+
+.squares {
+  display: grid;
+  //   grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+
+  .card {
+    width: 100%;
+    height: 300px;
+    @extend .round-corners;
+  }
+
+  .card-body {
+    background: getColour(offwhite);
+    @extend .round-corners;
+
+    &--pinkborder {
+      border: 3px solid getColour(primary);
+      background: getColour(white);
+    }
+    &--fullpink {
+      border: none;
+      background: getColour(primary);
+    }
+  }
+
+  //   .card-body--pinkborder {
+  //     border: 2px solid getColour(primary);
+  //   }
+}

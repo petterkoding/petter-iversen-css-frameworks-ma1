@@ -1,0 +1,18 @@
+$colours: (
+  white: #fff,
+  dark-grey: #6a6a6a,
+  medium-grey: #8d8d8d,
+  light-grey: #e2e2e2,
+  xlight-grey: #e5e5e5,
+  primary: #c32c72,
+  offwhite: #f4f3ee,
+  heading: #463f3a,
+  body: #e5e5e5,
+);
+
+@function getColour($colour) {
+  @return map-get($colours, $colour);
+}
+
+// media
+$tablet: 768px;

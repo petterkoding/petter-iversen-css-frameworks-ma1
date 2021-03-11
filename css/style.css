@@ -1,0 +1,124 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #e5e5e5;
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 3em 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #f4f3ee !important;
+}
+
+.navbar .navbar-brand {
+  color: #262626;
+  font-size: 36px;
+}
+
+.navbar .navbar-nav .active > .nav-link {
+  color: #c32c72;
+}
+
+.navbar .nav-link {
+  text-transform: uppercase;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.round-corners, .squares .card, .squares .card-body {
+  border-radius: 20px;
+  border: none;
+}
+
+.squares {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+.squares .card {
+  width: 100%;
+  height: 300px;
+}
+
+.squares .card-body {
+  background: #f4f3ee;
+}
+
+.squares .card-body--pinkborder {
+  border: 3px solid #c32c72;
+  background: #fff;
+}
+
+.squares .card-body--fullpink {
+  border: none;
+  background: #c32c72;
+}
+
+h1 {
+  color: #463f3a;
+  margin-bottom: 1em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #f4f3ee;
+  padding: 2em 0;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer .footer__item {
+  font-size: 0.9em;
+  color: #8d8d8d;
+}

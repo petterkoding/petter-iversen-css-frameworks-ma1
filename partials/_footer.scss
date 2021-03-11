@@ -1,0 +1,21 @@
+.footer {
+  flex-shrink: 0;
+  background: getColour(offwhite);
+  padding: 2em 0;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  .footer__item {
+    font-size: 0.9em;
+    color: getColour(medium-grey);
+  }
+}
